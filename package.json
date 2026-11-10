@@ -1,0 +1,85 @@
+{
+  "name": "dsh-cost-ledger",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "lib/index.js",
+  "description": "dsh-go native plugin: today's DeepSeek API cost in the composer, a 7-day ledger panel, and per-turn cost notes — computed locally from session logs.",
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "dsh-go",
+    "cost",
+    "usage",
+    "billing",
+    "android"
+  ],
+  "license": "MIT",
+  "author": "manke5201314-svg",
+  "homepage": "https://github.com/manke5201314-svg/dsh-cost-ledger",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/manke5201314-svg/dsh-cost-ledger.git"
+  },
+  "files": [
+    "lib/",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "engines": {
+    "dsh": ">=0.2.1-rc.2 <0.3.0-0"
+  },
+  "dshGo": {
+    "v": 1,
+    "title": {
+      "zh": "账本",
+      "en": "Ledger"
+    },
+    "icon": "coin",
+    "contributes": {
+      "composer.strip": [
+        {
+          "id": "today",
+          "icon": "coin",
+          "text": "今日 —",
+          "panel": "ledger"
+        }
+      ],
+      "panels": [
+        {
+          "id": "ledger",
+          "title": "花费账本",
+          "icon": "coin",
+          "placement": [
+            "session.tab",
+            "features",
+            "chat.panel"
+          ]
+        }
+      ],
+      "turn.note": [
+        {
+          "id": "turnCost"
+        }
+      ],
+      "message.actions": [
+        {
+          "id": "msgCost",
+          "label": "这条花费",
+          "icon": "coin"
+        }
+      ]
+    }
+  },
+  "bugs": {
+    "url": "https://github.com/manke5201314-svg/dsh-cost-ledger/issues"
+  }
+}
