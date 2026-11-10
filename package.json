@@ -1,7 +1,7 @@
 {
-  "name": "dsh-cost-ledger",
+  "name": "dsh-go-cost-ledger",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "type": "module",
   "main": "lib/index.js",
   "description": "dsh-go native plugin: today's DeepSeek API cost in the composer, a 7-day ledger panel, and per-turn cost notes — computed locally from session logs.",

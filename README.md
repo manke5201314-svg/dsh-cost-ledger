@@ -26,6 +26,12 @@ git clone https://github.com/manke5201314-svg/dsh-cost-ledger.git
 dsh plugin --profile web add ./dsh-cost-ledger
 ```
 
+也可以从 npm 安装：
+
+```sh
+dsh plugin --profile web add dsh-go-cost-ledger
+```
+
 然后在 App 的「引擎」页重启一次引擎（或重开 App）。新插件由引擎启动时加载。
 
 ## 计费口径

@@ -1,4 +1,4 @@
 # id: any unique id; name: must equal "name" in package.json.
 - insert:
-    - id: dsh-cost-ledger
-      name: dsh-cost-ledger
+    - id: dsh-go-cost-ledger
+      name: dsh-go-cost-ledger
