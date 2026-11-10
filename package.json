@@ -1,10 +1,10 @@
 {
   "name": "dsh-go-cost-ledger",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "type": "module",
   "main": "lib/index.js",
-  "description": "dsh-go native plugin: today's DeepSeek API cost in the composer, a 7-day ledger panel, and per-turn cost notes — computed locally from session logs.",
+  "description": "dsh-go 手机 App 原生插件：在输入框上方显示今日 DeepSeek API 花费，带 7 天账本面板和每轮回复的成本脚注，全部在本机按会话日志计算。",
   "keywords": [
     "dsh",
     "dsh-plugin",
@@ -27,7 +27,8 @@
     "cordis.patch.yml",
     "README.md",
     "README.en.md",
-    "LICENSE"
+    "LICENSE",
+    "CHANGELOG.md"
   ],
   "dsh": {
     "bundle": {
@@ -45,6 +46,20 @@
     },
     "icon": "coin",
     "contributes": {
+      "composer.actions": [
+        {
+          "id": "openLedger",
+          "label": {
+            "zh": "账本",
+            "en": "Ledger"
+          },
+          "icon": "coin",
+          "effect": {
+            "type": "open",
+            "page": "panel:ledger"
+          }
+        }
+      ],
       "composer.strip": [
         {
           "id": "today",

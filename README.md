@@ -60,6 +60,6 @@ dsh plugin --profile web remove dsh-cost-ledger
 
 见 [CHANGELOG.md](CHANGELOG.md)。
 
-## License
+## 许可证
 
 MIT

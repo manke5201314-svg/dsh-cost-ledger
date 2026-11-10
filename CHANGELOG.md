@@ -3,6 +3,18 @@
 本项目的所有重要变更都记录在这里，格式参考 [Keep a Changelog](https://keepachangelog.com/zh-CN/1.1.0/)，
 版本号遵循 [语义化版本](https://semver.org/lang/zh-CN/)。
 
+## [0.1.1] - 2026-11-10
+
+### 新增
+
+- **输入框胶囊「账本」**：在输入框上方的胶囊行直接打开花费账本面板，不必先找状态条。
+
+### 变更
+
+- 插件介绍改为中文：`package.json` 的 `description` 会显示在 npm 与 GitHub 仓库页。
+- 发布文件补上 `CHANGELOG.md`，npm 包内不再缺变更记录。
+- README 的「License」小节改为「许可证」。
+
 ## [0.1.0] - 2026-11-10
 
 ### 新增
@@ -26,4 +38,5 @@
 - 金额按 API 价目估算，不等于账号实际扣费（订阅、赠送额度不计）。
 - 首次统计在会话很多时要几秒，之后增量刷新。
 
+[0.1.1]: https://github.com/manke5201314-svg/dsh-cost-ledger/releases/tag/v0.1.1
 [0.1.0]: https://github.com/manke5201314-svg/dsh-cost-ledger/releases/tag/v0.1.0
