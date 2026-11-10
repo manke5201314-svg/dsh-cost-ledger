@@ -56,6 +56,10 @@ dsh plugin --profile web remove dsh-cost-ledger
 
 再删掉克隆下来的目录即可。
 
+## 变更记录
+
+见 [CHANGELOG.md](CHANGELOG.md)。
+
 ## License
 
 MIT

@@ -56,6 +56,10 @@ dsh plugin --profile web remove dsh-cost-ledger
 
 Then delete the cloned directory.
 
+## Changelog
+
+See [CHANGELOG.md](CHANGELOG.md).
+
 ## License
 
 MIT
